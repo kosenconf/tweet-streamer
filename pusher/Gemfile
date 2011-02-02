@@ -1,0 +1,7 @@
+source "http://rubygems.org"
+
+gem "twitter-stream"
+gem "eventmachine"
+gem "yajl-ruby"
+gem "pit"
+gem "pusher"
