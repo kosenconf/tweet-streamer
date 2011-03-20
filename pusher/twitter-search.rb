@@ -2,10 +2,11 @@ require "rubygems"
 require "twitter/json_stream"
 require "eventmachine"
 require "yajl"
+require "uri"
 require "pit"
 require "pusher"
 
-query = ARGV.shift
+query = URI.encode(ARGV.shift)
 raise "please give some query" if query.nil?
 
 account = Pit.get("kc014tokyo", :require => {
